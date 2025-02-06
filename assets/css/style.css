@@ -419,6 +419,10 @@ footer .widget_title_text {
     nav ul {
         flex-direction: column;
         display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-white);
     }
     header {
         height: auto;
@@ -430,5 +434,63 @@ footer .widget_title_text {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+}
+@media (max-width:420px) {
+
+    .banner_headline{
+        padding: 15px;
+    }
+    .banner_headline h1 {
+        font-size:45px;
+        margin: 10px 0 0 0;
+        max-width: 250px;
+    }
+    .banner_headline h2 {
+        font-size: 15px;
+        margin: 30px 0 30px 0;
+        max-width: 250px;
+    }
+    #geral section, #geral aside{
+        padding: 18px;
+    }
+    .footer_copy {
+        padding: 0 18px;
+    }
+    .logo{
+        padding-left: 10px;
+    }
+    article{
+        min-width: 250px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height:30px;
+        margin: 30px 25px 30px 0;
+    }
+    article .news_posted_at{
+        font-size: 10px;
+        padding: 8px;
+    }
+    article .news_comments{
+        font-size: 10px;
+        padding: 8px;
+    }
+    article .news_thumbnail {
+        margin-top: 25px;
+    }
+    article .news_title {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        font-size: 20px;
+    }
+    article .news_resume {
+        color: #000;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 18px;
     }
 }
